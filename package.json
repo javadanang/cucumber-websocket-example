@@ -12,13 +12,20 @@
   "author": "pnhung177",
   "license": "ISC",
   "devDependencies": {
-    "cucumber": "^1.0.0"
+    "cucumber": "~1.0.0",
+    "chai": "~3.5.0",
+    "sinon": "~1.17.4",
+    "socket.io-client": "~1.4.6",
+    "mocha": "~2.5.3",
+    "supertest": "~1.2.0",
+    "config": "~1.21.0"
   },
   "dependencies": {
     "async": "^2.0.0-rc.6",
     "bluebird": "^3.4.1",
     "lodash": "^4.13.1",
     "mongojs": "^2.4.0",
+    "mongoose": "^4.5.1",
     "superagent": "^2.0.0"
   }
 }
