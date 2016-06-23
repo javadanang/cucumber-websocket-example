@@ -1,0 +1,98 @@
+{
+  "dbConfig": {
+    "adapter": "mongodb",
+    "mongoDb": {
+      "host": "mongodb://localhost:27017/testCopy",
+      "options":   {
+        "server": {
+          "socketOptions": { "keepAlive": 1 }
+        },
+        "auto_reconnect": true,
+        "user": "",
+        "pass": ""
+      }
+    },
+    "redis": {
+      "server": "192.168.2.50",
+      "port": 6379,
+      "username": "admin",
+      "password": "qgs@123"
+    },
+    "mysql": {
+      "host": "192.168.2.86",
+      "database" : "qupworld",
+      "user"     : "qupworld",
+      "password" : "qupworld"
+    },
+    "redisMapProvider": {
+      "server": "192.168.2.85",
+      "port": 6379,
+      "index": 0,
+      "username": "admin",
+      "password": "qgs@123"
+    }
+  },
+  "imagesUrl": "https://lab-qup.s3.amazonaws.com/",
+  "trackUrl": "https://lab-qup.s3.amazonaws.com/",
+  "port": 1339,
+  "s3":{
+    "isActive": true,
+    "bucket": "lab-qup",
+    "accessKeyId": "AKIAI4ES3M6LF7SB7KNQ",
+    "secretAccessKey": "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",
+    "region": "us-west-2"
+  },
+  "urlProtocol": "http://",
+  "APIKeyGoogle": ["AIzaSyB-gwS5uBZZsgWuZe2A5JaEBktCtesTFSw", "AIzaSyAbejPTwOLT58G086r31JQgHRlhroNQO2k", "AIzaSyA3h9njvBG7BHVpXd1-fHx7tI5NSkSKooU"], // AIzaSyA3h9njvBG7BHVpXd1-fHx7tI5NSkSKooU => QGS
+  "logging": {
+    "server": "http://127.0.0.1",
+    "port": 1335,
+    "route": {
+      "drivers" : {
+        "login": "/api/v2/drivers/login",
+        "logout": "/api/v2/drivers/logout",
+        "bookIn": "/api/v2/drivers/bookIn",
+        "bookOff": "/api/v2/drivers/bookOff",
+        "rqJob": "/api/v2/drivers/rqJob",
+        "received": "/api/v2/drivers/received",
+        "accept": "/api/v2/drivers/accept",
+        "arrive": "/api/v2/drivers/arrive",
+        "cancel": "/api/v2/drivers/cancel",
+        "reCancel": "/api/v2/drivers/reCancel",
+        "startTrip": "/api/v2/drivers/startTrip",
+        "noShow": "/api/v2/drivers/noShow",
+        "pickup": "/api/v2/drivers/pickup",
+        "drop": "/api/v2/drivers/drop",
+        "deny": "/api/v2/drivers/deny",
+        "ignore": "/api/v2/drivers/ignore",
+        "complete": "/api/v2/drivers/complete",
+        "rating": "/api/v2/drivers/rating",
+        "online": "/api/v2/drivers/online"
+      },
+      "passenger": {
+        "cancel": "/api/v2/passenger/cancel"
+      },
+      "cc": {
+        "cancel": "/api/v2/cc/cancel"
+      },
+      "booking": {
+        "finished": "/api/v2/booking/finished"
+      }
+    }
+  },
+  "webServiceBase": {
+    "server": "192.168.2.86",
+    "port": "8080/qupservice",
+    "username": "qupworldapp",
+    "password": "wrath!cider2abbot$helmet!rotate"
+  },
+  "reportMail": {
+    "account": {
+      "user": "report@qupworld.com",
+      "pass": "QUpWorld@report#$"
+    },
+    "sendTo": "quang.hoang@qupworld.com, vinh.tran@qupworld.com, thuan.ho@qupworld.com, duy.phan@qupworld.com, dat.pham@qupworld.com, hoang.nguyen@qupworld.com"
+  },
+  "keyGoogleMap": "AIzaSyB-gwS5uBZZsgWuZe2A5JaEBktCtesTFSw",
+  "timezone": "Asia/Saigon"
+}

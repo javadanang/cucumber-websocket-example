@@ -1,19 +1,19 @@
 'use strict';
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'test';
+process.env.NODE_ENV = 'bdd';
 
 var events = require('events');
 var util = require('util');
-var Promise = require('bluebird');
-var lodash = require('lodash');
 var mongojs = require('mongojs');
-
-events.EventEmitter.defaultMaxListeners = 100;
-
+var lodash = require('lodash');
+var request = require('supertest');
+var config = require('config');
 var World;
 
 World = function World(callback) {
-  callback && callback();
+	// this.db = db.collection('Fleet');
+    this.request = request("localhost:1339");
+    callback && callback() ;
 };
 
 module.exports.World = World;
